@@ -1,0 +1,62 @@
+.header {
+    font-weight: var(--font-weight-medium);
+    font-size: 18px;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.header-container {
+    display: flex; /* включает Flexbox для расположения дочерних элементов в строку */
+    justify-content: space-between; /* распределяет пространство между элементами:
+                                      первый элемент прижимается влево,
+                                      последний - вправо,
+                                      остальные равномерно располагаются между ними */
+    align-items: center;   /* центрируем текст по вертикали */
+    height: 100%;           /* занимает всю высоту родителя (header) */
+}
+
+.header-logo {
+    margin-left: 160px;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-menu,
+.header-menu-more {
+    display: flex;
+    padding: 14px 16px;
+    margin: 0;
+    gap: 20px;
+    border-radius: 25px;
+    box-shadow: var(--shadow-blue);
+}
+
+.header-link {
+    color: var(--text-blue);
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-auth {
+    display: flex;
+    align-items: center;
+}
+
+.header-login-link {
+    display: flex;
+    padding: 14px 20px;
+    margin-right: 160px;
+    border-radius: 25px;
+    box-shadow: var(--shadow-blue);
+    color: var(--text-white);
+    background-color: var(--background-blue);
+}

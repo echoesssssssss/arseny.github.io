@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakly</title>
+
+    <!-- Preconnect для шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/sections/hero.css">
+    <link rel="stylesheet" href="css/sections/info.css">
+    <link rel="stylesheet" href="css/sections/study.css">
+    <link rel="stylesheet" href="css/sections/price.css">
+    <link rel="stylesheet" href="css/sections/questions.css">
+    <link rel="stylesheet" href="css/sections/bonus.css">
+    <link rel="stylesheet" href="css/sections/teachers.css">
+
+    <!-- Фавиконка -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="speakly.html" class="header-logo" title="На главную">
+                <img src="images/logo.svg" alt="Speakly" class="header-logo-svg">
+            </a>
+
+            <nav class="header-navigation">
+                <ul class="header-menu">
+                    <li class="header-menu-item"><a href="#languages" class="header-link">Языки</a></li>
+                    <li class="header-menu-item"><a href="#price" class="header-link">Цены</a></li>
+                    <li class="header-menu-item"><a href="#feedback" class="header-link">Отзывы</a></li>
+                </ul>
+
+                <ul class="header-menu-more">
+                    <li class="header-menu-item header-menu-item--dropdown">
+                        <a href="#more" class="header-link dropdown-toggle">
+                            Ещё
+                            <img src="images/more.svg" alt="" class="dropdown-arrow">
+                        </a>
+
+                        <ul class="dropdown-menu"><!-- пункты выпадающего меню --></ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-auth">
+                <a href="#login" class="header-login-link">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Speakly</h1>
+
+                <p class="hero-subtitle">
+                    <span class="hero-span-text">//</span>
+                    Онлайн-школа изучения иностранных языков
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="button button-request">Оставить заявку</button>
+                    <a href="#about" class="button button-about">О нас</a>
+                </div>
+            </div>
+            
+            <div class="partners">
+                <img src="images/partners/polymath.svg" alt="Polymath" loading="lazy">
+                <img src="images/partners/nordstar.svg" alt="NordStar" loading="lazy">
+                <img src="images/partners/pobeda.svg" alt="Pobeda" loading="lazy">
+                <img src="images/partners/capsule.svg" alt="Capsule" loading="lazy">
+                <img src="images/partners/vk.svg" alt="VK" loading="lazy">
+                <img src="images/partners/ozon.svg" alt="Ozon Банк" loading="lazy">                    
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info-content">
+                <p class="info-title">
+                    Уроки,
+                    <span class="info-title-span-text">которые приносят</span><br> 
+                    радость и успех
+                </p>
+
+                <p class="info-subtitle">
+                    <span class="info-subtitle-span-text-1">//</span><br>
+                    <span class="info-subtitle-span-text-2">Обучение, которое вдохновляет.</span><br>
+                    Когда уроки проходят с интересом и<br>
+                    увлечением, они открывают дорогу к<br>
+                    настоящим победам и уверенности в<br>
+                    себе.
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card info-card-1">
+                    <p>
+                        Интерактивная<br>
+                        платформа
+                    </p>
+                    <img src="images/cards/listening.svg" alt="Аудирование" class="bg-img-1">
+                    <img src="images/cards/book.svg" alt="Книга" class="overlay-img-1">
+                    <img src="images/cards/like.svg" alt="Лайк" class="overlay-img-2">
+                </div>
+
+                <div class="info-card info-card-2">
+                    <p>
+                        Индивидуальные<br>
+                        занятия
+                    </p>
+                    <img src="images/cards/people.svg" alt="Человек" class="bg-img-2">
+                </div>
+
+                <div class="info-card info-card-3">
+                    <p>
+                        Видеоуроки<br>
+                        <span class="info-card-span-text-1">
+                            для самостоятельной<br>
+                            практики
+                        </span>
+                    </p>
+                    
+                </div>
+
+                <div class="info-card info-card-4">
+                    <p>
+                        Разговорные клубы<br>
+                        <span class="info-card-span-text-1">по уровням и темам</span>
+                    </p>
+                </div>
+
+                <div class="info-card info-card-5">
+                    <p>Наглядная статистика</p>
+                    <div class="img-row">
+                        <img src="images/cards/headphones.svg" alt="Наушники">
+                        <img src="images/cards/pen.svg" alt="Ручка">
+                        <img src="images/cards/tasks.svg" alt="Задания">
+                    </div>
+                    
+                </div>
+
+                <div class="info-card info-card-6">
+                    <p>
+                        Задания,<br>
+                        которые затягивают<br>
+                        <span class="info-card-span-text-2">Ну, оооочень интересно!</span>
+                    </p>
+                </div>
+
+                <div class="info-card info-card-7">
+                    <p>
+                        Короткие беседы<br>
+                        с преподавателем</p>
+                </div>
+
+                <div class="info-card info-card-8">
+                    <p>Аудиокниги</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="study">
+            <h1 class="title">Мы обучаем</h1>
+                <div class="study-grid">
+                    <div class="study-card russian">
+                        <img src="images/study/russian.svg" alt="Флаг России" class="flag">
+                        <p class="text-ru">
+                            Русский<br>
+                            (как иностранный)
+                        </p>
+                    </div>
+
+                    <div class="study-card great-britain">
+                        <img src="images/study/great-britain.svg" alt="Флаг Великобритании" class="flag">
+                        <p class="text-other">Английский</p>
+                    </div>
+
+                    <div class="study-card germany">
+                        <img src="images/study/germany.svg" alt="Флаг Германии" class="flag">
+                        <p class="text-other">Немецкий</p>
+                    </div>
+
+                    <div class="study-card china">
+                        <img src="images/study/china.svg" alt="Флаг Китай" class="flag">
+                        <p class="text-other">Китайский</p>
+                    </div>
+
+                    <div class="study-card japan">
+                        <img src="images/study/japan.svg" alt="Флаг Японии" class="flag">
+                        <p class="text-other">Японский</p>
+                    </div>
+
+                    <div class="study-card korean">
+                        <img src="images/study/korean.svg" alt="Флаг Кореи" class="flag">
+                        <p class="text-other">Корейский</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="price">
+            <h1 class="title-blue">Стоимость обучения</h1>
+
+            <div class="price-grid">
+                <div class="price-card">
+                    
+                    <div class="badge">
+                        <p>Все языки</p>
+                    </div>
+
+                    <div class="price-info">
+                        <h2 class="service-name">Индивидуальное обучение</h2>
+
+                        <p class="description-price">
+                            <span class="blue-text">12</span>
+                            уроков по 
+                            <span class="blue-text">60</span>
+                            минут
+                        </p>
+
+                        <p class="price-value">
+                            <span class="blue-text-big">1390</span> ₽/урок
+                        </p>
+                    </div>
+
+                    <ul class="description">
+                        <li>Индивидуальные занятия с<br>преподавателем на выбор</li>
+                        <li>Доступ к онлайн-тренажёрам</li>
+                        <li>Прогресс-тесты</li>
+                        <li>Разговорные клубы</li>
+                        <li>Гибкий график</li>
+                    </ul>
+
+                    <img src="images/price/line.svg" alt="Линия" class="price-img price-img-1">
+                    <img src="images/price/star-1.svg" alt="Звезда" class="price-img price-img-2">
+
+                </div>
+
+                <div class="price-card">
+                    
+                    <div class="badge">
+                        <p>Все языки</p>
+                    </div>
+
+                    <div class="price-info">
+                        <h2 class="service-name">Занятия в группах</h2>
+
+                        <p class="description-price">
+                            <span class="blue-text">12</span>
+                            уроков по 
+                            <span class="blue-text">60</span>
+                            минут
+                        </p>
+
+                        <p class="price-value">
+                            <span class="blue-text-big">890</span> ₽/урок
+                        </p>
+                    </div>
+
+                    <ul class="description">
+                        <li>Группы из 4-6 человек с одним<br>уровнем языка</li>
+                        <li>Доступ к онлайн-тренажёрам</li>
+                        <li>Прогресс-тесты</li>
+                        <li>Занятия по удобному<br>фиксированному расписанию</li>
+                    </ul>
+
+                    <img src="images/price/star-2.svg" alt="Звезда" class="price-img price-img-3">
+                    <img src="images/price/star-3.svg" alt="Звезда" class="price-img price-img-4">
+                    <img src="images/price/star-4.svg" alt="Звезда" class="price-img price-img-5">
+
+                </div>
+            </div>
+
+            <div class="consultation">
+                <p class="consultation-link">Расскажем всё об обучении и подберём идеальную программу:</p>
+                <button class="consultation-button">Получить консультацию</button>
+            </div>
+        </section>
+
+        <section class="bonus">
+            <h1 class="title">Рассрочка и бонусы</h1>
+
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <div class="bonus-info">
+                        <h2 class="bonus-name">Учитесь сейчас,<br>платите потом</h2>
+
+                        <p class="description-bonus">
+                            Разделим стоимость курса<br>на платежи от 10 333₽/месяц
+                        </p>
+
+                        <div class="bonus-image-1">
+                            <img src="images/bonus/Alpha.svg" alt="Альфа-Банк">
+                            <img src="images/bonus/Sber.svg" alt="Сбер">
+                            <img src="images/bonus/TBank.svg" alt="Т-Банк">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-info">
+                        <h2 class="bonus-name">Верните <span class="blue-text">13%</span> от стоимости<br><span class="blue-text">любого курса</span></h2>
+
+                        <p class="description-bonus">
+                            Поможем оформить документы,<br>чтобы получить налоговый вычет за<br>обучение
+                        </p>
+                    </div>
+
+                    <div class="bonus-image-2">
+                        <img src="images/bonus/percent.svg" alt="Процент">
+                    </div> 
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-info">
+                        <h2 class="bonus-name">Участвуйте в реферальной<br>программе</h2>
+
+                        <p class="description-bonus">
+                            Дарим бонусы за каждого<br>приглашённого друга — и вам, и<br>другу
+                        </p>
+                    </div>
+                    
+                    <div class="student-badge">
+                        <img src="images/bonus/avatar.svg" alt="Аватар" class="avatar">
+
+                        <div class="student">
+                            <p class="name">Никита Ф.</p>
+                            <p class="notification">Теперь учится в Speakly</p>
+                        </div>
+
+                        <img src="images/bonus/gift.svg" alt="Подарок" class="gift">
+                    </div>
+                </div>
+        </section>
+
+        <section class="teachers">
+            <h1 class="title-blue">Преподаватели</h1>
+            <h2 class="teacher-description">
+                Все наши преподаватели имеют высшее лингвистическое и педагогическое<br>
+                образование и являются высококвалифицированными специалистами.
+            </h2>
+
+            <div class="teachers-grid">
+                <div class="teachers-card">
+                    <div class="teachers-image">
+                        <img src="images/teachers/teacher-1.png" alt="Преподаватель" class="teacher-1">
+                    </div>
+
+                    <div class="teachers-overlay"></div>
+
+                    <h2 class="teachers-name">Дмитрий Петров</h2>
+
+                    <p class="teachers-work">
+                        Опыт преподавания: 5 лет,<br>
+                        в Speakly с 2024 г.
+                    </p>
+                </div>
+
+                <div class="teachers-card">
+                    <div class="teachers-image">
+                        <img src="images/teachers/teacher-2.png" alt="Преподаватель">
+                    </div>
+
+                    <div class="teachers-overlay"></div>
+
+                    <h2 class="teachers-name"><span class="blue-text">Анна Иоанновна</span></h2>
+
+                    <p class="teachers-work">
+                        Опыт преподавания: 2 года,<br>
+                        в Speakly с 2025 г.
+                    </p>
+                </div>
+
+                <div class="teachers-card">
+                    <div class="teachers-image">
+                        <img src="images/teachers/teacher-3.png" alt="Преподаватель" class="teacher-3">
+                    </div>
+
+                    <div class="teachers-overlay"></div>
+
+                    <h2 class="teachers-name">Павел Коротков</h2>
+
+                    <p class="teachers-work">
+                        Опыт преподавания: 10 лет,<br>
+                        в Speakly с 2018 г.
+                    </p>
+                </div>
+            </div>
+
+            <div class="arrows-container">
+                <div class="arrow-circle-left">
+                    <img src="images/teachers/left.svg" alt="Влево">
+                </div>
+                <div class="arrow-circle-right">
+                    <img src="images/teachers/right.svg" alt="Вправо">
+                </div>
+            </div>
+        </section>
+
+        <section class="questions">
+            <h1 class="title">О чём ещё интересно узнать</h1>
+
+            <div class="questions-container">
+                <div class="questions-item">
+                    <button class="questions-question">
+                        <span>Что нужно, чтобы заниматься в Speakly?</span>
+                        <span class="questions-icon questions-icon-blue">+</span>
+                    </button>
+                </div>
+
+                <div class="questions-item">
+                    <button class="questions-question">
+                        <span>Что делать, если я не могу прийти на урок?</span>
+                        <span class="questions-icon questions-icon-dark">+</span>
+                    </button>
+                </div>
+
+                <div class="questions-item">
+                    <button class="questions-question">
+                        <span>Кто наши преподаватели? Как мы их отбираем и готовим?</span>
+                        <span class="questions-icon questions-icon-transparent">+</span>
+                    </button>
+                </div>
+
+                <div class="questions-item">
+                    <button class="questions-question">
+                        <span>Можно ли у вас учить не один, а сразу два языка? Есть ли скидки?</span>
+                        <span class="questions-icon questions-icon-blue">+</span>
+                    </button>
+                </div>
+
+                <div class="questions-item">
+                    <button class="questions-question">
+                        <span>Можно начать бесплатно?</span>
+                        <span class="questions-icon questions-icon-dark">+</span>
+                    </button>
+                </div>
+
+                <div class="questions-item">
+                    <button class="questions-question">
+                        <span>Как узнать свой уровень языка?</span>
+                        <span class="questions-icon questions-icon-transparent">+</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="speakly.html" class="footer-logo">
+                <img src="images/logo.svg" alt="Speakly" class="footer-logo-svg">
+            </a>
+
+            <nav class="footer-links">
+                <div class="footer-column">
+                    <p class="footer-title">Узнать больше</p>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a href="#about">Узнать о нас</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#how-it-works">Как это работает</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#world">Мир Speakly</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#history">История Speakly</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <p class="footer-title">Правовая информация</p>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a href="#info">Общая информация</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#privacy">Политика конфиденциальности</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#terms">Условия обслуживания</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <p class="footer-title">Связаться с нами</p>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a href="mailto:speakly@gmail.com">speakly@gmail.com</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#vk" target="_blank" rel="noopener">VK</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#yt" target="_blank" rel="noopener">YouTube</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#tg" target="_blank" rel="noopener">Telegram</a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#max" target="_blank" rel="noopener">MAX</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <small class="copyright">© 2026 Speakly | Все права <br> защищены</small>
+        </div>
+    </footer>
+</body>
+</html>
